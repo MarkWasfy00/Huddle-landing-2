@@ -1,0 +1,361 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 112.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  background-color: #ebfbff;
+  background-image: url(./images/bg-hero-mobile.svg);
+  background-repeat: no-repeat;
+  height: clamp(700px, 90vh ,700px);
+}
+.container header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.container header .logo, .container header .btn {
+  margin: 30px;
+}
+.container header .logo img, .container header .btn img {
+  width: 150px;
+}
+.container header .btn button {
+  border-radius: 20px;
+  border: none;
+  width: 130px;
+  height: 30px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 8px;
+  background-color: white;
+  color: #00252e;
+  font-family: inherit;
+}
+.container header .btn button:hover {
+  background-color: #00252e;
+  color: white;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  cursor: pointer;
+}
+.container main .holder .title {
+  font-size: 1.5rem;
+  width: 300px;
+  text-align: center;
+  margin: 50px auto 20px;
+  font-weight: 700;
+}
+.container main .holder p {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  width: 340px;
+  margin: 0 auto;
+}
+.container main .holder .btn {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+.container main .holder .btn button {
+  border-radius: 20px;
+  border: none;
+  width: 250px;
+  height: 40px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 8px;
+  background-color: #ff52bf;
+  color: White;
+  font-family: inherit;
+}
+.container main .holder .btn button:hover {
+  background-color: #00252e;
+  color: white;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  cursor: pointer;
+}
+.container main .mockup {
+  margin-top: 40px;
+  text-align: center;
+}
+.container main .mockup img {
+  width: 300px;
+}
+
+.card {
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  height: 460px;
+  margin: 50px 20px;
+  border-radius: 10px;
+}
+.card .photo {
+  text-align: center;
+}
+.card .photo img {
+  width: 250px;
+  margin-top: 40px;
+}
+.card .title {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+.card .paragraph {
+  margin: 20px auto 0;
+  text-align: center;
+  font-size: 0.8rem;
+  width: 270px;
+  color: #808d99;
+  font-family: "Open Sans", sans-serif;
+}
+
+.lastcard {
+  position: relative;
+  z-index: 999;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
+  height: 170px;
+  width: 90%;
+  max-width: 700px;
+  margin: 50px auto -150px;
+  background-color: white;
+}
+.lastcard .title {
+  padding-top: 30px;
+  color: #00252e;
+  text-align: center;
+}
+.lastcard .btn {
+  text-align: center;
+  margin-top: 25px;
+}
+.lastcard .btn button {
+  border-radius: 20px;
+  border: none;
+  width: 250px;
+  height: 45px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 8px;
+  background-color: #ff52bf;
+  color: white;
+  font-family: inherit;
+}
+.lastcard .btn button:hover {
+  background-color: #00252e;
+  color: white;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #00252e;
+  position: relative;
+  margin-top: 50px;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8rem;
+}
+footer .logo, footer .container header .btn, .container header footer .btn {
+  padding-top: 150px;
+}
+footer .logo img, footer .container header .btn img, .container header footer .btn img {
+  width: 200px;
+}
+footer .location, footer .email, footer .phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+footer .location .gps img, footer .email .gps img, footer .phone .gps img {
+  vertical-align: middle;
+}
+footer .location .dis, footer .email .dis, footer .phone .dis {
+  width: 270px;
+}
+footer .email {
+  padding-bottom: 30px;
+}
+footer .info ul, footer .info2 ul {
+  padding-left: 20px;
+  list-style: none;
+}
+footer .info ul li, footer .info2 ul li {
+  margin-bottom: 15px;
+}
+footer .info ul li:hover, footer .info2 ul li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+footer .social {
+  padding: 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.8rem;
+  gap: 20px;
+  color: white;
+}
+footer .social div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 1px white solid;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+footer .social div:hover {
+  background-color: white;
+  cursor: pointer;
+  color: #00252e;
+}
+
+.copyright {
+  text-align: center;
+  padding-bottom: 40px;
+  background-color: #00252e;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8rem;
+}
+
+@media (min-width: 1140px) {
+  .container main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 20px;
+  }
+  .container main .holder .title {
+    margin: 80px 0 0;
+    text-align: left;
+  }
+  .container main .holder p {
+    width: 460px;
+    font-size: 0.9rem;
+    margin-top: 20px;
+    text-align: left;
+  }
+  .container main .holder .btn {
+    text-align: left;
+  }
+  .container main .mockup {
+    width: 50%;
+    margin: 0;
+  }
+  .container main .mockup img {
+    width: clamp(600px,80%,900px);
+  }
+
+  .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 95%;
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .card .photo img {
+    width: 400px;
+  }
+  .card .text .title {
+    text-align: left;
+  }
+  .card .text .paragraph {
+    text-align: left;
+    max-width: 400px;
+    width: 100%;
+  }
+
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  footer .head-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .info, footer .info2 {
+    margin-top: 90px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  footer .social {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+
+  .copyright {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    color: white;
+    padding: 20px;
+  }
+}
